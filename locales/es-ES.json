@@ -1,0 +1,46 @@
+{
+  "units": {
+    "temperature": "celsius"
+  },
+  "Layout": {
+    "metaData": {
+      "title": "Next.js Clima",
+      "description": "Clima app construida con Next.js y next-intl"
+    }
+  },
+  "Header": {
+    "appTitle": "Clima",
+    "navLinks": {
+      "week": "Esta semana",
+      "about": "Acerca de"
+    }
+  },
+  "WeatherAlerts": {
+    "title": "Alertas de Clima"
+  },
+  "Home": {
+    "title": "El clima de hoy",
+    "userGreeting": "👋 Bienvenido, {name}!",
+    "sunny": "Soleado"
+  },
+  "Week": {
+    "metaData": {
+      "title": "El clima semanal | Next.js Clima",
+      "description": "El pronóstico del tiempo para esta semana"
+    },
+    "title": "El clima de esta semana",
+    "alertCount": "{count, plural, =0 {Sin alertas} one {Una alert!} other {# Alertas!}}",
+    "dayDate": "{dayDate, date, longDay}",
+    "sunny": "Soleado",
+    "cloudy": "Nublado",
+    "rainy": "Lluvioso",
+    "partlyCloudy": "Paricialmente Nublado",
+    "showers": "Chubascos",
+    "thunderstorms": "Tormentas"
+  },
+  "About": {
+    "title": "Acerca",
+    "description": "Esta es una aplicación simulada de clima minimalista creada con <linkToNext>Next.js</linkToNext>.",
+    "liveDuration": "Nosotros hemos estado en vivo por {duration, number, ::precision-integer} segundos."
+  }
+}
