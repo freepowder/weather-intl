@@ -17,7 +17,7 @@ export default function Home({
 
       <h1 className="text-xs font-thin">{t("title")}</h1>
       <h2 className="text-lg">
-        {format.dateTime(new Date("2024-04-15T00:00:00Z"), {
+        {format.dateTime(new Date(), {
           dateStyle: "full",
         })}
       </h2>
