@@ -24,12 +24,12 @@ export default async function Home({
   const [today] = data.list;
 
   return (
-    <div className="container max-w-screen-lg">
-      <div className="flex-1">
-        <CurrentWeather data={today} city={data.city} />
-        <Dashboard data={today} />
-        <WeeklyForecast data={data} />
+      <div className="container max-w-screen-lg">
+        <div className="flex-1">
+          <CurrentWeather data={today} city={data.city} />
+          <Dashboard data={today} />
+          <WeeklyForecast data={data} />
+        </div>
       </div>
-    </div>
   );
 }

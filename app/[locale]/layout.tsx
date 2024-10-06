@@ -10,6 +10,7 @@ import { LocaleToggle } from "@/components/ui/locale-toggle";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import useTextDirection from "@/hooks/useTextDirection";
 import { locales } from "@/i18n.config";
+import {Suspense} from "react";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -60,7 +61,9 @@ export default function RootLayout({
               <div className="flex gap-2 ml-auto">
                 <ModeToggle />
                 <LocationDialog />
+                <Suspense>
                 <LocaleToggle locale={locale} />
+                  </Suspense>
               </div>
             </div>
           </header>
