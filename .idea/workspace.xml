@@ -36,6 +36,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
+    "npm.lint.executor": "Run",
     "ts.external.directory.path": "/Users/alvaroretanafernandez/dev/weather-main/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -58,7 +59,17 @@
       <recent name="$PROJECT_DIR$/app/[locale]" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -81,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.dev" />
       </list>
@@ -94,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728145206924</updated>
-      <workItem from="1728145207957" duration="11880000" />
+      <workItem from="1728145207957" duration="12392000" />
     </task>
     <servers />
   </component>
