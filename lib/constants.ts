@@ -34,16 +34,3 @@ export const DEFAULT_SUGGESTIONS = [
     lon: 139.65,
   },
 ];
-
-export const MESSAGES = {
-  FEELS_WARMER: "Feels warmer than the actual temperature.",
-  FEELS_COLDER: "Feels colder than the actual temperature.",
-  FEELS_SAME: "Feels like the actual temperature.",
-  HUMIDITY_HIGH: "High humidity. It might feel humid and uncomfortable.",
-  HUMIDITY_LOW: "Low humidity. It might feel dry.",
-  HUMIDITY_MODARATE: "Moderate humidity. Comfortable conditions.",
-  VISIBILITY_CLEAR: "It's perfectly clear right now.",
-  VISIBILITY_GOOD: "Good visibility.",
-  VISIBILITY_POOR:
-    "Poor visibility. Exercise caution while driving or moving around.",
-};

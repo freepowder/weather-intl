@@ -6,10 +6,10 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 
 import { LocationDialog } from "@/components/location-dialog";
+import { LocaleToggle } from "@/components/ui/locale-toggle";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import useTextDirection from "@/hooks/useTextDirection";
 import { locales } from "@/i18n.config";
-import { LocaleToggle } from "@/components/ui/locale-toggle";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
