@@ -1,24 +1,21 @@
-# next-intl mini-demo
+# Weather App
 
-This is a demo project for next-intl.
+Weather app with [Next.js](https://nextjs.org) v14 typescript, [Tailwind CSS](https://tailwindcss.com), [shadcn/ui](https://ui.shadcn.com/) and [OpenWeather API](https://openweathermap.org/).
 
-## Installation
 
-```bash
-npm install
+
+```shell
+# Install dependencies
+$ npm install
+
+# Start dev server with hot reload at localhost:3000
+$ npm run dev
 ```
 
-## Usage
+Open http://localhost:3000 with your browser to see the result.
 
-To run the dev server, use the following command:
+You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
 
-```bash
-npm run dev
-```
+## Credits
 
-To build for production, use the following command:
-
-```bash
-npm run build
-```
-
+Weather data provided by [OpenWeather API](https://openweathermap.org/)

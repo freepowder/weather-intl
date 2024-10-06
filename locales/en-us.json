@@ -1,46 +1,113 @@
 {
-  "units": {
-    "temperature": "fahrenheit"
-  },
   "Layout": {
     "metaData": {
       "title": "Next.js Weather",
       "description": "A weather app built with Next.js and next-intl"
     }
   },
-  "Header": {
-    "appTitle": "Weather",
-    "navLinks": {
-      "week": "This week",
-      "about": "About"
-    }
+  "Dashboard" : {
+    "feelTitle": "Feels Like",
+    "humidityTitle": "Humidity"
+    ,
+    "visibilityTitle": "Visibility",
+    "FEELS_WARMER": "Feels warmer than the actual temperature.",
+    "FEELS_COLDER": "Feels colder than the actual temperature.",
+    "FEELS_SAME": "Feels like the actual temperature.",
+    "HUMIDITY_HIGH": "High humidity. It might feel humid and uncomfortable.",
+    "HUMIDITY_LOW": "Low humidity. It might feel dry.",
+    "HUMIDITY_MODERATE": "Moderate humidity. Comfortable conditions.",
+    "VISIBILITY_CLEAR": "It's perfectly clear right now.",
+    "VISIBILITY_GOOD": "Good visibility.",
+    "VISIBILITY_POOR":
+    "Poor visibility. Exercise caution while driving or moving around."
   },
-  "WeatherAlerts": {
-    "title": "Weather Alerts"
+  "CurrentWeather" : {
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday",
+    "Sunday": "Sunday",
+    "Thunderstorm" : "Thunderstorm",
+    "200" : "thunderstorm with light rain",
+    "201" : "thunderstorm with rain",
+    "202" : "thunderstorm with heavy rain",
+    "210" : "light thunderstorm",
+    "211" : "thunderstorm",
+    "212" : "heavy thunderstorm",
+    "221" : "ragged thunderstorm",
+    "230" : "thunderstorm with light drizzle",
+    "231" : "thunderstorm with drizzle",
+    "232" : "thunderstorm with heavy drizzle",
+    "Drizzle": "Drizzle",
+    "300" : "light intensity drizzle",
+    "301" : "drizzle",
+    "302" : "heavy intensity drizzle",
+    "310" : "light intensity drizzle rain",
+    "311" : "drizzle rain",
+    "312" : "heavy intensity drizzle rain",
+    "313" : "shower rain and drizzle",
+    "314" : "heavy shower rain and drizzle",
+    "321" : "shower drizzle",
+    "Rain": "Rain",
+    "500" : "light rain",
+    "501" : "moderate rain",
+    "502" : "heavy intensity rain",
+    "503" : "very heavy rain",
+    "504" : "extreme rain",
+    "511" : "freezing rain",
+    "520" : "light intensity shower rain",
+    "521" : "shower rain",
+    "522" : "heavy intensity shower rain",
+    "531" : "ragged shower rain",
+    "Snow": "Snow",
+    "600" : "light snow",
+    "601" : "snow",
+    "602" : "heavy snow",
+    "611" : "sleet",
+    "612" : "light shower sleet",
+    "613" : "shower sleet",
+    "615" : "light rain and snow",
+    "616" : "rain and snow",
+    "620" : "light shower snow",
+    "621" : "shower snow",
+    "622" : "heavy shower snow",
+    "Mist": "Mist",
+    "Smoke": "Smoke",
+    "Haze": "Haze",
+    "Dust": "Dust",
+    "Fog": "Fog",
+    "Sand": "Sand",
+    "Ash": "Ash",
+    "Squall": "Squall",
+    "Tornado": "Tornado",
+    "701" : "mist",
+    "711" : "smoke",
+    "721" : "haze",
+    "731" : "sand/dust whirls",
+    "741" : "fog",
+    "751" : "sand",
+    "761" : "dust",
+    "762" : "volcanic ash",
+    "771" : "squalls",
+    "781" : "tornado",
+    "Clear": "Clear",
+    "800" : "clear sky",
+    "Clouds": "Clouds",
+    "801" : "few clouds: 11-25%",
+    "802" : "scattered clouds: 25-50%",
+    "803" : "broken clouds: 51-84%",
+    "804" : "overcast clouds: 85-100%"
   },
-  "Home": {
-    "title": "Today's weather",
-    "userGreeting": "👋 Welcome, {name}!",
-    "sunny": "Sunny"
-  },
-  "Week": {
-    "metaData": {
-      "title": "This week's weather | Next.js Weather",
-      "description": "This week's weather forecast"
-    },
-    "title": "This week's weather",
-    "alertCount": "{count, plural, =0 {No alerts} one {One alert!} other {# alerts!}}",
-    "dayDate": "{dayDate, date, longDay}",
-    "sunny": "Sunny",
-    "cloudy": "Cloudy",
-    "rainy": "Rainy",
-    "partlyCloudy": "Partly Cloudy",
-    "showers": "Showers",
-    "thunderstorms": "Thunderstorms"
-  },
-  "About": {
-    "title": "About",
-    "description": "This is a minimalistic mock weather app built with <linkToNext>Next.js</linkToNext>.",
-    "liveDuration": "We've been live for {duration, number, ::precision-integer} seconds."
+  "WeeklyForecast" : {
+    "title" : "Weekly Forecast",
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat",
+    "Sun": "Sun"
   }
 }

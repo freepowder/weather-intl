@@ -1,46 +1,115 @@
 {
-  "units": {
-    "temperature": "celsius"
-  },
   "Layout": {
     "metaData": {
       "title": "Next.js Clima",
-      "description": "Clima app construida con Next.js y next-intl"
+      "description": "Clima app construida con Next.js OpenWeather y next-intl"
     }
   },
-  "Header": {
-    "appTitle": "Clima",
-    "navLinks": {
-      "week": "Esta semana",
-      "about": "Acerca de"
-    }
+  "Dashboard" : {
+    "feelTitle": "Se Siente Como"
+    ,
+    "humidityTitle": "Humedad"
+    ,
+    "visibilityTitle": "Visibilidad"
+    ,
+    "FEELS_WARMER": "Se siente más cálido que la temperatura real.",
+    "FEELS_COLDER": "Se siente más frio que la temperatura real.",
+    "FEELS_SAME": "Se siente como temperatura real.",
+    "HUMIDITY_HIGH": "Alta humedad. Puede sentirse húmedo e incómodo.",
+    "HUMIDITY_LOW": "Baja humedad. Puede que se sienta seco.",
+    "HUMIDITY_MODERATE": "Humedad moderada. Condiciones cómodas.",
+    "VISIBILITY_CLEAR": "Está perfectamente claro ahora mismo.",
+    "VISIBILITY_GOOD": "Buena visibilidad.",
+    "VISIBILITY_POOR":
+    "Mala visibilidad. Tenga cuidado al conducir o moverse."
   },
-  "WeatherAlerts": {
-    "title": "Alertas de Clima"
+  "CurrentWeather" : {
+    "Monday": "Lunes",
+    "Tuesday": "Martes",
+    "Wednesday": "Miercoles",
+    "Thursday": "Jueves",
+    "Friday": "Viernes",
+    "Saturday": "Sabado",
+    "Sunday": "Domingo",
+    "Thunderstorm": "Tormenta eléctrica",
+    "200": "tormenta con lluvia ligera",
+    "201": "tormenta con lluvia",
+    "202": "tormenta con lluvia fuerte",
+    "210": "tormenta eléctrica ligera",
+    "211": "tormenta eléctrica",
+    "212": "tormenta eléctrica fuerte",
+    "221": "tormenta eléctrica irregular",
+    "230": "tormenta con llovizna ligera",
+    "231": "tormenta con llovizna",
+    "232": "tormenta con llovizna fuerte",
+    "Drizzle": "Llovizna",
+    "300": "llovizna de intensidad ligera",
+    "301": "llovizna",
+    "302": "llovizna de alta intensidad",
+    "310": "llovizna y lluvia de intensidad ligera",
+    "311": "lluvia con llovizna",
+    "312": "llovizna y lluvia de alta intensidad",
+    "313": "chubascos y llovizna",
+    "314": "chubascos fuertes con llovizna",
+    "321": "chubascos de llovizna",
+    "Rain": "Lluvia",
+    "500": "lluvia ligera",
+    "501": "lluvia moderada",
+    "502": "lluvia de alta intensidad",
+    "503": "lluvia muy fuerte",
+    "504": "lluvia extrema",
+    "511": "lluvia helada",
+    "520": "lluvia de chubascos de baja intensidad",
+    "521": "chubascos",
+    "522": "lluvia de chubascos de alta intensidad",
+    "531": "chubascos irregulares",
+    "Snow": "Nieve",
+    "600": "nieve ligera",
+    "601": "nieve",
+    "602": "nieve intensa",
+    "611": "aguanieve",
+    "612": "aguanieve ligera",
+    "613": "chubascos de aguanieve",
+    "615": "lluvia ligera y nieve",
+    "616": "lluvia y nieve",
+    "620": "chubascos de nieve ligera",
+    "621": "chubascos de nieve",
+    "622": "chubascos de nieve intensa",
+    "Mist": "Neblina",
+    "Smoke": "Humo",
+    "Haze": "Calina",
+    "Dust": "Polvo",
+    "Fog": "Niebla",
+    "Sand": "Arena",
+    "Ash": "Ceniza",
+    "Squall": "Chubasco violento",
+    "Tornado": "Tornado",
+    "701": "neblina",
+    "711": "humo",
+    "721": "calina",
+    "731": "remolinos de arena/polvo",
+    "741": "niebla",
+    "751": "arena",
+    "761": "polvo",
+    "762": "ceniza volcánica",
+    "771": "ráfagas de viento",
+    "781": "tornado",
+    "Clear": "Despejado",
+    "800": "cielo despejado",
+    "Clouds": "Nubes",
+    "801": "pocas nubes: 11-25%",
+    "802": "nubes dispersas: 25-50%",
+    "803": "nubes rotas: 51-84%",
+    "804": "nublado: 85-100%"
   },
-  "Home": {
-    "title": "El clima de hoy",
-    "userGreeting": "👋 Bienvenido, {name}!",
-    "sunny": "Soleado"
-  },
-  "Week": {
-    "metaData": {
-      "title": "El clima semanal | Next.js Clima",
-      "description": "El pronóstico del tiempo para esta semana"
-    },
-    "title": "El clima de esta semana",
-    "alertCount": "{count, plural, =0 {Sin alertas} one {Una alert!} other {# Alertas!}}",
-    "dayDate": "{dayDate, date, longDay}",
-    "sunny": "Soleado",
-    "cloudy": "Nublado",
-    "rainy": "Lluvioso",
-    "partlyCloudy": "Paricialmente Nublado",
-    "showers": "Chubascos",
-    "thunderstorms": "Tormentas"
-  },
-  "About": {
-    "title": "Acerca",
-    "description": "Esta es una aplicación simulada de clima minimalista creada con <linkToNext>Next.js</linkToNext>.",
-    "liveDuration": "Nosotros hemos estado en vivo por {duration, number, ::precision-integer} segundos."
+  "WeeklyForecast" : {
+    "title" : "Pronóstico Semanal",
+    "Mon": "Lun",
+    "Tue": "Mar",
+    "Wed": "Mie",
+    "Thu": "Jue",
+    "Fri": "Vie",
+    "Sat": "Sab",
+    "Sun": "Dom"
   }
 }
