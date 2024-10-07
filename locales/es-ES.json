@@ -5,6 +5,11 @@
       "description": "Clima app construida con Next.js OpenWeather y next-intl"
     }
   },
+  "LocationDialog": {
+    "text": "Buscar ciudad...",
+    "placeholder": "Cambiar localizacion...",
+    "suggestions": "Sugerencias"
+  },
   "Dashboard" : {
     "feelTitle": "Se Siente Como"
     ,

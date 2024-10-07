@@ -19,10 +19,11 @@ import { Location } from "@/types";
 import { Button, ButtonProps } from "./ui/button";
 
 export const LocationButton = ({ ...props }: ButtonProps) => {
+
   return (
     <Button variant="outline" {...props}>
       <NavigationIcon size={14} className="mr-2" />
-      <p className="text-sm text-muted-foreground">Change location...</p>
+      <p className="text-sm text-muted-foreground">{props.buttonText}</p>
     </Button>
   );
 };
@@ -58,7 +59,7 @@ export const LocationItem = ({
   );
 };
 
-export const LocationDialog = () => {
+export const LocationDialog = ({placeholder,buttonText, suggestions}:{placeholder:string,buttonText:string, suggestions:string} ) => {
   const { results, loading, value, setValue } = useLocations();
   const { isOpen, open, close, toggle } = useDisclosure();
   const router = useRouter();
@@ -82,12 +83,12 @@ export const LocationDialog = () => {
 
   return (
     <>
-      <LocationButton onClick={open} />
+      <LocationButton onClick={open} {...{buttonText:buttonText} }/>
       <CommandDialog open={isOpen} onOpenChange={toggle}>
         <CommandInput
           value={value}
           onValueChange={setValue}
-          placeholder="Search city..."
+          placeholder={placeholder}
         />
         <CommandList>
           {!loading && <CommandEmpty>No results found.</CommandEmpty>}
@@ -99,7 +100,7 @@ export const LocationDialog = () => {
           )}
 
           {value === "" && (
-            <CommandGroup heading="Suggestions">
+            <CommandGroup heading={suggestions}>
               {DEFAULT_SUGGESTIONS.map((location) => (
                 <LocationItem
                   key={location.lat}

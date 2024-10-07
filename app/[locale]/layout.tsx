@@ -11,6 +11,7 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 import useTextDirection from "@/hooks/useTextDirection";
 import { locales } from "@/i18n.config";
 import {Suspense} from "react";
+import {useTranslations} from "next-intl";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -41,7 +42,7 @@ export default function RootLayout({
 }>) {
   unstable_setRequestLocale(locale);
   const dir = useTextDirection();
-
+  const t = useTranslations("LocationDialog");
   return (
     <html
       lang={locale}
@@ -60,10 +61,10 @@ export default function RootLayout({
             <div className="container max-w-screen-lg flex items-center h-14">
               <div className="flex gap-2 ml-auto">
                 <ModeToggle />
-                <LocationDialog />
                 <Suspense>
-                <LocaleToggle locale={locale} />
-                  </Suspense>
+                  <LocationDialog placeholder={t("text")} buttonText={t("placeholder")} suggestions={t("suggestions")}/>
+                  <LocaleToggle locale={locale} />
+                </Suspense>
               </div>
             </div>
           </header>

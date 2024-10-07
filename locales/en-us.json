@@ -5,6 +5,11 @@
       "description": "A weather app built with Next.js and next-intl"
     }
   },
+  "LocationDialog": {
+    "text": "Search city...",
+    "placeholder": "Change location...",
+    "suggestions": "Suggestions"
+  },
   "Dashboard" : {
     "feelTitle": "Feels Like",
     "humidityTitle": "Humidity"
